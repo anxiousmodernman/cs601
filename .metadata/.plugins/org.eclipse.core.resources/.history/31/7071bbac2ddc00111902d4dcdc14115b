@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Coleman McFarland Biography</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- start body -->
+    <div id="wrapper">
+    
+      <h1>coleman mcfarland</h1>
+      
+      <div id="navbar">
+      	
+      	<ul>
+      		<li>Special Reports</li>
+      		<li>Dedicated Sends</li>
+      		<li>Best Of</li>
+      		<li>Sponsored Feature</li>
+      		<li>Home</li>
+      	</ul>
+      </div>
+
+      <div class="content">
+          <img src="self.png" alt="A picture of Coleman McFarland">
+          <p>
+          <em>Here find a summary of my relevant skills and qualifications.</em>
+          </p>
+
+          <ul>
+              <li>Project management experience</li>
+              <li>Systems analysis</li>
+              <li>Agile methods</li>
+              <li>SQL Server 2005/2008</li>
+              <li>Linux environments</li>
+              <li>Basic scripting and automation</li>
+          </ul>
+          <p>
+            <em>...and I dress to impress!</em>
+          </p>
+      </div>
+
+      <div class="content">
+          
+          <table>
+            <tr>
+                <td><a href="http://www.twitter.com/CEMcFarland">Twitter</a></td>
+                <td><a href="http://www.linkedin.com/pub/coleman-mcfarland/9/817/266">LinkedIn</a></td>
+            </tr>
+            <tr>
+                <td> 202.246.1684</td>
+                <td> coleman {dot} mcfarland {at} gmail {dot} com </td>
+            </tr>
+            <tr>
+                <td>4104 Illinois Ave NW</td>
+                <td>Wash. DC 20011</td>
+            </tr>
+      </div>
+
+      <div class="content">
+          <em>Contact me at any time for hire or consulting on IT projects.</em>
+
+      </div>
+
+    </div>
+</body>
+</html>

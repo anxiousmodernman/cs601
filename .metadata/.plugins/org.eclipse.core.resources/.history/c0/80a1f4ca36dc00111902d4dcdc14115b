@@ -10,9 +10,6 @@
 
 <script src="assign3.js" type="text/javascript"></script>
 
-<script src="documentready.js" type="text/javascript"></script>
-
-
 
 </head>
 <body>
@@ -35,11 +32,11 @@
       <div class="content">
 
           <ul>
-              <li class="imageList"><button id="hide-all" type="submit">Hide all images</button></li>
-              <li class="imageList"><button id="show-even" type="submit">Show even images</button></li>
-              <li class="imageList"><button id="show-odd" type="submit">Show odd images</button></li>
-              <li class="imageList"><button id="right-shift" type="submit">Right shift</button></li>
-              <li class="imageList"><button id="left-shift" type="submit">Left shift</button></li>
+              <li class="imageList"><button id="hide-all" onclick="hideAll()">Hide all images</button></li>
+              <li class="imageList"><button id="show-even" onclick="showEven">Show even images</button></li>
+              <li class="imageList"><button id="show-odd" onclick="showOdd">Show odd images</button></li>
+              <li class="imageList"><button id="right-shift" onclick="rightShift">Right shift</button></li>
+              <li class="imageList"><button id="left-shift" onclick="leftShift">Left shift</button></li>
           </ul>
 
       </div>

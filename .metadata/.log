@@ -7,3 +7,24 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 
 !ENTRY org.eclipse.core.resources 2 10035 2012-07-31 08:54:47.924
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2012-08-01 18:57:11.322 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_32
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.aptana.editor.common 4 0 2012-08-01 19:14:45.415
+!MESSAGE (Build 3.2.0.201206251729) [ERROR]  The input of the content provider should be the IParseRootNode, not the editor!
+
+!ENTRY com.aptana.editor.common 4 0 2012-08-01 19:14:45.420
+!MESSAGE (Build 3.2.0.201206251729) [ERROR]  The input of the content provider should be the IParseRootNode, not the editor!
+
+!ENTRY com.aptana.editor.common 4 0 2012-08-01 19:14:45.422
+!MESSAGE (Build 3.2.0.201206251729) [ERROR]  The input of the content provider should be the IParseRootNode, not the editor!
+
+!ENTRY com.aptana.editor.common 4 0 2012-08-01 19:14:45.423
+!MESSAGE (Build 3.2.0.201206251729) [ERROR]  The input of the content provider should be the IParseRootNode, not the editor!
+
+!ENTRY com.aptana.editor.common 4 0 2012-08-01 19:14:45.628
+!MESSAGE (Build 3.2.0.201206251729) [ERROR]  The input of the content provider should be the IParseRootNode, not the editor!

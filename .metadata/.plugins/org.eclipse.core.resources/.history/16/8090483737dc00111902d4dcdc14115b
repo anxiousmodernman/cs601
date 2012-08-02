@@ -1,0 +1,49 @@
+// Select the cats
+// assign3
+
+$(document).ready(function() {
+	// on the pageload execute the following
+	$("ul.catList").addClass("wrappedElement")
+})
+
+/*
+$(function() {
+	
+	function hideAll(){
+		$("img").hide()
+	}
+})
+*/
+
+function hideAll() {
+	$("img").hide()
+}
+
+function showEven() {
+	$("img:odd").show(slow)
+  
+}
+
+function showOdd()
+{
+	$("img:even")  
+}
+
+function rightShift()
+{
+  
+}
+
+function leftShift()
+{
+  
+}
+
+
+/*				The buttons!
+              <li class="imageList"><button id="hide-all" onclick="hideAll()">Hide all images</button></li>
+              <li class="imageList"><button id="show-even" onclick="showEven">Show even images</button></li>
+              <li class="imageList"><button id="show-odd" onclick="showOdd">Show odd images</button></li>
+              <li class="imageList"><button id="right-shift" onclick="rightShift">Right shift</button></li>
+              <li class="imageList"><button id="left-shift" onclick="leftShift">Left shift</button></li>
+ */

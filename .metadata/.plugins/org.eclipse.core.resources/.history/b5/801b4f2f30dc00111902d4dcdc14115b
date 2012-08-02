@@ -43,6 +43,7 @@
     }
 
     img {
+        float: right;
         margin: 5px;
         border-radius: 5px;
         border: 10px; 
@@ -87,8 +88,4 @@
     .imageList {
     	list-style: none;
     	margin: auto;
-    }
-    
-    .catList {
-    	
     }

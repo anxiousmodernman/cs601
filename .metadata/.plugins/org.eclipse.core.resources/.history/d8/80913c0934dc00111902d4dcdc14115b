@@ -5,15 +5,6 @@
 <meta charset="utf-8">
 
 <link rel="stylesheet" type="text/css" href="style.css">
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-
-<script src="assign3.js" type="text/javascript"></script>
-
-<script src="documentready.js" type="text/javascript"></script>
-
-
-
 </head>
 <body>
 <!-- start body -->
@@ -35,18 +26,18 @@
       <div class="content">
 
           <ul>
-              <li class="imageList"><button id="hide-all" type="submit">Hide all images</button></li>
-              <li class="imageList"><button id="show-even" type="submit">Show even images</button></li>
-              <li class="imageList"><button id="show-odd" type="submit">Show odd images</button></li>
-              <li class="imageList"><button id="right-shift" type="submit">Right shift</button></li>
-              <li class="imageList"><button id="left-shift" type="submit">Left shift</button></li>
+              <li class="imageList"><button>Hide all images</button></li>
+              <li class="imageList"><button>Show even images</button></li>
+              <li class="imageList"><button>Show odd images</button></li>
+              <li class="imageList"><button>Right shift</button></li>
+              <li class="imageList"><button>Left shift</button></li>
           </ul>
 
       </div>
 
       <div class="content">
 
-          <ul class="catList">
+          <ul>
               <li class="imageList"><img src="image1.jpg" alt="A cat pushing another cats face into a bowl"></li>
               <li class="imageList"><img src="image2.jpeg" alt="A tiny kitten sleeping in a pocket"></li>
               <li class="imageList"><img src="image3.jpg" alt="A kitten in mid air jumping onto another cat."></li>

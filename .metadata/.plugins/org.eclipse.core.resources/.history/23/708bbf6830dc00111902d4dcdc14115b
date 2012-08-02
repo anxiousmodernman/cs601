@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>All Cats, All the Time</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- start body -->
+    <div id="wrapper">
+    
+      <h1>All Cats, All the Time</h1>
+      <!-- Cooment out navbar
+      <div id="navbar">
+      	
+      	<ul>
+      		<li>Special Reports</li>
+      		<li>Dedicated Sends</li>
+      		<li>Best Of</li>
+      		<li>Sponsored Feature</li>
+      		<li>Home</li>
+      	</ul>
+      </div>
+-->
+      <div class="content">
+
+          <ul>
+              <li>Hide all images</li>
+              <li>Show even images</li>
+              <li>Show odd images</li>
+              <li>Right shift</li>
+              <li>Left shift</li>
+          </ul>
+
+      </div>
+
+      <div class="content">
+
+          <ul>
+              <li class="imageList"><img src="image1.jpg"></li>
+              <li class="imageList"><img src="image2.jpeg"></li>
+              <li class="imageList"><img src="image3.jpg"></li>
+              <li class="imageList"><img src="image4.jpg"></li>
+              <li class="imageList"><img src="image5.jpg"></li>
+          </ul>
+
+      </div>
+
+<!-- Comment out table and second div
+      <div class="content">
+          
+          <table>
+            <tr>
+                <td><a href="http://www.twitter.com/CEMcFarland">Twitter</a></td>
+                <td><a href="http://www.linkedin.com/pub/coleman-mcfarland/9/817/266">LinkedIn</a></td>
+            </tr>
+            <tr>
+                <td> 202.246.1684</td>
+                <td> coleman {dot} mcfarland {at} gmail {dot} com </td>
+            </tr>
+            <tr>
+                <td>4104 Illinois Ave NW</td>
+                <td>Wash. DC 20011</td>
+            </tr>
+      </div>
+-->
+   
+    </div>
+</body>
+</html>

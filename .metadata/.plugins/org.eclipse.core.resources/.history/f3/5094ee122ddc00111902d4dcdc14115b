@@ -43,6 +43,7 @@
     }
 
     img {
+        float: right;
         margin: 5px;
         border-radius: 5px;
         border: 10px; 
@@ -77,18 +78,4 @@
     }
     .tinyfont {
         font-size: .5em;
-    }
-    
-    .wrappedElement {
-    	border: 1px solid red;
-    	background-color: cyan;
-    }
-    
-    .imageList {
-    	list-style: none;
-    	margin: auto;
-    }
-    
-    .catList {
-    	
     }

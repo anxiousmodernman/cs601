@@ -92,12 +92,3 @@
     .catList {
     	
     }
-    
-    button {
-    	float:right;
-    	margin: 10px;
-    }
-    
-    .buttonwrapper {
-    	margin: 0px 20px auto;
-    }

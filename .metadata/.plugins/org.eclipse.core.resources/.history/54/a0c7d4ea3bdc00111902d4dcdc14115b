@@ -33,9 +33,6 @@
       </div>
 -->
       <div class="content">
-      	
-      	<div class="buttonwrapper">
-
 
           <ul>
               <li class="imageList"><button id="hide-all" type="submit">Hide all images</button></li>
@@ -44,8 +41,6 @@
               <li class="imageList"><button id="right-shift" type="submit">Right shift</button></li>
               <li class="imageList"><button id="left-shift" type="submit">Left shift</button></li>
           </ul>
-          
-       </div>
 
       </div>
 

@@ -7,8 +7,7 @@
         background-color: #3F92D2;
         margin-left: auto;
         margin-right: auto;
-        width: 800px;
-        padding: 5px;
+        width: 805px;
         border-radius: 3px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -16,40 +15,47 @@
     
     #navbar {
     	float: left;
+    	/*border for hacking*/
     	border: 1px solid black;
-    	min-height:500px;
      	height:auto !important;
-     	height:500px;
      	clear: right; 
+    }
+    
+    #header {
+    	/*border for hacking*/
+    	border: 1px solid black;
+    	background-image: url('SB_logo_white.png');
+    	height: 150px;
+    	background-repeat: no-repeat;
     }
 
     h1 {
-        padding-left: 5px;
-        background-color: #66A3D2;
-        margin: 10px;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
+        padding-right: 5px;
+        text-align: right;
+        margin: 68px 10px 0px;
+        font-size:5.0em;
+        opacity: .8;
+
     }
 
     .content {
         background-color: #66A3D2;
-        clear: right;
         overflow: auto;
         margin: 10px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
     }
+    
+    .contentwrapper {
+    	clear: right;
+    	overflow: auto;
+    	/*border for hacking*/
+    	border: 1px solid black;
+    }
 
     img {
-        float: right;
-        margin: 5px;
-        border-radius: 5px;
-        border: 10px; 
-        border-color: #25567B;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
+
     }
 
     p {
@@ -79,3 +85,10 @@
     .tinyfont {
         font-size: .5em;
     }
+
+/*
+
+         border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+ */

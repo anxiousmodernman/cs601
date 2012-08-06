@@ -1,3 +1,9 @@
+/*
+* TODO make it so that visited links to not have highlighting.
+* TODO make it so that hovering over a box makes it change color. AKA nice navigation.
+*/
+
+
     body {
         background-color: #0B61A4;
         font-family: sans-serif;
@@ -36,6 +42,14 @@
         font-size:5.0em;
         opacity: .8;
 
+    }
+    
+    a a:visited a:hover {
+    	text-decoration: none;
+    }
+    
+    .navitem {
+    	
     }
 
     .content {

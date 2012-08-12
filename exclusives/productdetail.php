@@ -26,10 +26,17 @@
       	</ul>
       </div>
       
+      <!-- BEGIN MAIN CONTENT -->
       <div class="contentwrapper">
 
         <div class="content">
-
+        	
+        	<div class="htag">
+        		<!-- Try to make Yours. and Ours. fade in with CSS transition? -->
+        	<h2>The right message. Yours.<br> The right audience. Ours.</h2>
+        	</div>
+        	
+        
           <p>
           SmartBrief exclusives are opportunities for our advertising sponsors to own the message and block out the competition.
           Opportunities range from letting us handle all the content - the industry news our subscribers know and love - to a premium

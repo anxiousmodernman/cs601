@@ -1,6 +1,7 @@
 /*
 * TODO make it so that visited links to not have highlighting.
 * TODO make it so that hovering over a box makes it change color. AKA nice navigation.
+* TODO Pick a whole new color scheme
 */
 
 
@@ -9,22 +10,41 @@
         font-family: sans-serif;
     }
 
+
     #wrapper {
         background-color: #3F92D2;
         margin-left: auto;
         margin-right: auto;
         width: 805px;
         border-radius: 3px;
+        overflow: auto;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
+    }
+    
+    
+    #tablewrapper {
+    	width: 80%;
+    	        
+      }
+    
+    #tablewrapper tr {
+    	background-color: none;
     }
     
     #navbar {
     	float: left;
     	/*border for hacking*/
     	border: 1px solid black;
-     	height:auto !important;
      	clear: right; 
+     	width: 210px;
+     	
+    }
+    
+    #navbar li {
+    	list-style-type: none;
+    	padding: 10px;
+    	font-size: 20px;
     }
     
     #header {
@@ -35,25 +55,16 @@
     	background-repeat: no-repeat;
     }
 
-    h1 {
-        padding-right: 5px;
-        text-align: right;
-        margin: 68px 10px 0px;
-        font-size:5.0em;
-        opacity: .8;
-
-    }
-    
-    a a:visited a:hover {
-    	text-decoration: none;
-    }
-    
     .navitem {
     	
     }
 
+	.htag {
+		margin: 25px 10px 15px;
+		padding: 0 20px;
+	}
     .content {
-        background-color: #66A3D2;
+        background-color: #AAAFFA;
         overflow: auto;
         margin: 10px;
         border-radius: 5px;
@@ -68,6 +79,36 @@
     	border: 1px solid black;
     }
 
+    .tinyfont {
+        font-size: .5em;
+    }
+    
+    a:link {
+    	text-decoration: none;
+    }
+
+	a:visited {
+    	text-decoration: none;
+    	color: black;
+    }
+
+    a:hover {
+    	
+    }
+    
+    a:active {
+    	text-decoration: none;
+    }
+
+    h1 {
+        padding-right: 5px;
+        text-align: right;
+        margin: 68px 10px 0px;
+        font-size:5.0em;
+        opacity: .8;
+
+    }
+        
     img {
 
     }
@@ -95,9 +136,6 @@
 
     tr:nth-of-type(even) {
         background-color: #85ADC0;
-    }
-    .tinyfont {
-        font-size: .5em;
     }
 
 /*

@@ -42,14 +42,22 @@
     }
     
     #navbar ul {
-    	margin: 10px 0px 0px 10px;
+    	display: inline;
+    	margin: 0px 0px 0px 10px;
 		padding: 0;
+		width: 100%;
     }
     
     #navbar ul li {
     	list-style-type: none;
-    	padding: 10px;
-    	font-size: 25px;
+		padding: 25px 10px 10px 15px;
+		font-size: 22px;
+		margin: 0;
+		height: 45px;
+    }
+    
+    #navbar li:hover {
+    	background-color: #1D0772;
     }
     
     #header {

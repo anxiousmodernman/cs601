@@ -5,7 +5,6 @@
 	
 	//manually set id for testing
 	
-	
 	$product_id = $_GET['product_id'];
 	if (!isset($product_id)) {
 		$product_id = 1;

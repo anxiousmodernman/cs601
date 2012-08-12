@@ -1,4 +1,3 @@
-
 /*
  Database schema file.
 
@@ -8,6 +7,11 @@ price
 productDescription
 comments
 */
+
+
+-- create database cemhoste_exclusives
+use cemhoste_exclusives;
+
 
 drop table Product;
 drop table Price;

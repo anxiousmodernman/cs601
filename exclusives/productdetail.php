@@ -1,3 +1,42 @@
+<?php
+    require 'database.php';
+	
+	// Get product_name
+	
+	//manually set id for testing
+	
+	
+	$product_id = $_GET['product_id'];
+	if (!isset($product_id)) {
+		$product_id = 1;
+	}
+    
+	//manually set id for testing
+	$product_id = 2;
+	
+	// Overall product info query
+	$query = "SELECT * 
+			  FROM Product
+			  JOIN Price ON Product.id = Price.product_id
+			  JOIN ProductDescription ON Product.id = ProductDescription.product_id
+			  WHERE Product.id = $product_id";
+	$p_info = $db->query($query);
+	$p_info = $p_info->fetch();
+	$p_name = $p_info['product_name'];
+	$p_summary = $p_info['product_summary'];
+	$p_detail = $p_info['product_detail'];
+	
+	// Get prices only by Product.id
+	$query = "SELECT price_group, price 
+		      FROM Price 
+		      JOIN Product ON Price.product_id=Product.id
+			  WHERE Product.id = $product_id;
+	$p_prices = $db->query($query);
+	$p_prices = $p_prices->fetchAll(); 
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,34 +72,33 @@
         	
         	<div class="htag">
         		<!-- Try to make Yours. and Ours. fade in with CSS transition? -->
-        	<h2>The right message. Yours.<br> The right audience. Ours.</h2>
+        	<h2><?php echo $p_name ?></h2>
         	</div>
         	
         
-          <p>
-          SmartBrief exclusives are opportunities for our advertising sponsors to own the message and block out the competition.
-          Opportunities range from letting us handle all the content - the industry news our subscribers know and love - to a premium
-          opportunity for advertisers to provide their own message to our audience of millions of industry professionals.
-          </p>
+          <p><?php echo $p_summary ?></p>
+          <p><?php echo $p_detail ?></p>
           
           <p>
-          	Want to learn more? Contact our sales team today.
+          	Want to learn more? <a href="contactus.html">Contact our sales team today.</a>
           </p>
 
       </div>
   
       	
       	<div class="content">
-                   <em>Contact me at any time for hire or consulting on IT projects.</em>
+                   <em>Price table</em>
           <table>
             <tr>
-                <td><a href="http://www.twitter.com/CEMcFarland">Twitter</a></td>
-                <td><a href="http://www.linkedin.com/pub/coleman-mcfarland/9/817/266">LinkedIn</a></td>
+                <th>Price Group</th>
+                <th>Total Cost to Sponsor</th>
             </tr>
+            <?php foreach ($p_info as $p) : ?>
             <tr>
-                <td> 202.246.1684</td>
-                <td> coleman {dot} mcfarland {at} gmail {dot} com </td>
+                <td><?php echo $p['price_group']; ?></td>
+                <td><?php echo '$' . $p['price']; ?></td>
             </tr>
+            <? endforeach ?>
             <tr>
                 <td>4104 Illinois Ave NW</td>
                 <td>Wash. DC 20011</td>

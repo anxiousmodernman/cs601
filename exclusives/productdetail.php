@@ -25,15 +25,17 @@
 	$p_summary = $p_info['product_summary'];
 	$p_detail = $p_info['product_detail'];
 	
-	/*
+
 	// Get prices only by Product.id
-	$query = "SELECT price_group, price 
+
+	$query2 = "SELECT price_group, price 
 		      FROM Price 
 		      JOIN Product ON Price.product_id=Product.id
-			  WHERE Product.id = $product_id;"
-	$p_prices = $db->query($query);
-	$p_prices = $p_prices->fetchAll(); 
-*/
+			  WHERE Product.id = $product_id";
+			  
+	$p_prices = $db->query($query2);
+	$p_prices = $p_prices->fetchAll();
+	 
 ?>
 
 
@@ -56,10 +58,10 @@
       <div id="navbar">
       	
       	<ul>
-      		<li><a href="specialreport.html">Special Reports</a></li>
-      		<li><a href="dedicatedsend.html">Dedicated Sends</a></li>
-      		<li><a href="bestof.html">Best Of</a></li>
-      		<li><a href="sponsoredfeature.html">Sponsored Feature</a></li>
+      		<li><a href="productdetail.php?product_id=3">Special Reports</a></li>
+      		<li><a href="productdetail.php?product_id=2">Dedicated Sends</a></li>
+      		<li><a href="productdetail.php?product_id=1">Best Of</a></li>
+      		<li><a href="productdetail.php?product_id=4">Sponsored Feature</a></li>
       		<li><a href="index.html">Home</a></li>
       		<li><a href="contactus.html">Contact Us</a></li>
       	</ul>
@@ -84,8 +86,7 @@
           </p>
 
       </div>
-  
-      	<!-- TODO Comment out prices and fix shit 
+   
       	<div class="content">
                    <em>Price table</em>
           <table>
@@ -93,12 +94,16 @@
                 <th>Price Group</th>
                 <th>Total Cost to Sponsor</th>
             </tr>
-            <?php foreach ($p_info as $p) : ?>
+            
+            <?php foreach ($p_prices as $p) : ?>
+
             <tr>
                 <td><?php echo $p['price_group']; ?></td>
                 <td><?php echo '$' . $p['price']; ?></td>
             </tr>
-            <? endforeach ?>
+            <?php endforeach; ?>
+            
+
             <tr>
                 <td>4104 Illinois Ave NW</td>
                 <td>Wash. DC 20011</td>
@@ -106,7 +111,6 @@
            </table>
            
       </div>
-fix the prices thing -->
 
       </div>
 

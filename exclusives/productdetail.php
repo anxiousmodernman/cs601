@@ -11,7 +11,7 @@
 	}
     
 	//manually set id for testing
-	$product_id = 2;
+	//$product_id = 2;
 	
 	// Overall product info query
 	$query = "SELECT * 
@@ -25,14 +25,15 @@
 	$p_summary = $p_info['product_summary'];
 	$p_detail = $p_info['product_detail'];
 	
+	/*
 	// Get prices only by Product.id
 	$query = "SELECT price_group, price 
 		      FROM Price 
 		      JOIN Product ON Price.product_id=Product.id
-			  WHERE Product.id = $product_id;
+			  WHERE Product.id = $product_id;"
 	$p_prices = $db->query($query);
 	$p_prices = $p_prices->fetchAll(); 
-
+*/
 ?>
 
 
@@ -84,7 +85,7 @@
 
       </div>
   
-      	
+      	<!-- TODO Comment out prices and fix shit 
       	<div class="content">
                    <em>Price table</em>
           <table>
@@ -105,7 +106,7 @@
            </table>
            
       </div>
-
+fix the prices thing -->
 
       </div>
 

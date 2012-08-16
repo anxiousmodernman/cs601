@@ -2,3 +2,7 @@
 
 # ignore Aptana .metadata directory
 .metadata/
+
+# ignore swap files
+*~
+*.swp

@@ -17,10 +17,10 @@
       <div id="navbar">
       	
       	<ul>
-      		<li><a href="specialreport.html">Special Reports</a></li>
-      		<li><a href="dedicatedsend.html">Dedicated Sends</a></li>
-      		<li><a href="bestof.html">Best Of</a></li>
-      		<li><a href="sponsoredfeature.html">Sponsored Feature</a></li>
+      		<li><a href="productdetail.php?product_id=3">Special Reports</a></li>
+      		<li><a href="productdetail.php?product_id=2">Dedicated Sends</a></li>
+      		<li><a href="productdetail.php?product_id=1">Best Of</a></li>
+      		<li><a href="productdetail.php?product_id=4">Sponsored Feature</a></li>
       		<li><a href="index.html">Home</a></li>
       		<li><a href="contactus.html">Contact Us</a></li>
       	</ul>
@@ -29,39 +29,51 @@
       <div class="contentwrapper">
 
         <div class="content">
+        	<h2 class="htag">Want to know more?</h2>
+        	
+        	<p>Have a question? Looking for more information on pricing? 
+        		A SmartBrief sales representative is standing by to get you all the information you need to make your B2B advertising efforts a success. 
+        		Drop us a line below and we'll get back to you right away. </p>
+        	<br>
+        	<br>
 
-          <p>
-          SmartBrief exclusives are opportunities for our advertising sponsors to own the message and block out the competition.
-          Opportunities range from letting us handle all the content - the industry news our subscribers know and love - to a premium
-          opportunity for advertisers to provide their own message to our audience of millions of industry professionals.
-          </p>
-          
-          <p>
-          	Want to learn more? Contact our sales team today.
-          </p>
+    <form id="commentform" action="addcomment.php" method="post">
+        <fieldset id="contactInfo">
+                        <table>
 
-      </div>
+                            <tr>
+                                <td><label for="name">Enter your name:</label></td>
+                                <td>
+                                <input type="text" name="name" value="name" />
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td><label for="email">Enter your email</label></td>
+                                <td>
+                                <input type="text" name="email" value="email" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2"><textarea rows="15" cols="60" name="comment" value="comment" text-align="center"></textarea></td>
+                            </tr>
+
+                        </table>
+
+
+        </fieldset>
+
+        <fieldset id="controls">
+            <input type="submit" name="submit" value="We'll be in touch" />
+        </fieldset>
+
+    </form>
+
+
+        </div>
   
-      	
-      	<div class="content">
-                   <em>Contact me at any time for hire or consulting on IT projects.</em>
-          <table>
-            <tr>
-                <td><a href="http://www.twitter.com/CEMcFarland">Twitter</a></td>
-                <td><a href="http://www.linkedin.com/pub/coleman-mcfarland/9/817/266">LinkedIn</a></td>
-            </tr>
-            <tr>
-                <td> 202.246.1684</td>
-                <td> coleman {dot} mcfarland {at} gmail {dot} com </td>
-            </tr>
-            <tr>
-                <td>4104 Illinois Ave NW</td>
-                <td>Wash. DC 20011</td>
-            </tr>
-           </table>
-           
-      </div>
-
 
       </div>
 

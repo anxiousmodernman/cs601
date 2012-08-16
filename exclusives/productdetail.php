@@ -35,7 +35,18 @@
 			  
 	$p_prices = $db->query($query2);
 	$p_prices = $p_prices->fetchAll();
-	 
+	
+	// Get images only by Product.id
+	
+	$query3 = "SELECT url, alt_text, product_id
+			   FROM Image
+			   JOIN Product on Image.product_id=Product.id
+			   WHERE Image.product_id = $product_id";
+	$p_images = $db->query($query3);
+	$p_images = $p_images->fetch();
+	$p_image_url = $p_images['url'];
+	$p_image_alt_text = $p_images['alt_text'];
+	
 ?>
 
 
@@ -72,6 +83,12 @@
 
         <div class="content">
         	
+        	<div class="imagewrapper">
+        		<?php echo '<img src="' . $p_image_url . '" alt="' . $p_image_alt_text . '">' ?>
+        		
+        		
+        	</div>
+        	
         	<div class="htag">
         		<!-- Try to make Yours. and Ours. fade in with CSS transition? -->
         	<h2><?php echo $p_name ?></h2>
@@ -103,11 +120,6 @@
             </tr>
             <?php endforeach; ?>
             
-
-            <tr>
-                <td>4104 Illinois Ave NW</td>
-                <td>Wash. DC 20011</td>
-            </tr>
            </table>
            
       </div>

@@ -26,6 +26,8 @@ Basic Pricing
 
 Pricing is determined by the average price of a Leaderboard in each of our e-newsletters.
 
+
+
 GROUP
 	
 
@@ -182,3 +184,7 @@ Please review the Best Of workflow slide deck.
 Support Material
 
 Link to Best Of one-pager
+
+
+DS: http://alquemie.smartbrief.com/alquemie/secure-servlet/briefXSL?mode=PREVIEW&issueid=99AC0FBA-FDA4-4A16-8CAD-7B91F10C48B3
+DS: http://alquemie.smartbrief.com/alquemie/secure-servlet/briefXSL?issueid=2F25AE3B-06D7-4362-8D4E-FF7F4A3ADDA0&mode=PREVIEW

@@ -117,7 +117,7 @@
 							} else {
 								echo "<div class=\"htag\"><h2>Oops!</h2></div>";
 								echo "<p>Something when wrong with filling out your form. Please <a href=\"contactus.html\">return to the previous page</a> and try again. Be sure to enter a valid name and email address.</p>";
-								echo "<p><a href=\"contactus.html\">Please click here to return to the comment form.</a></p>";
+								echo "<p><a href=\"contactus.html\" style=\"color:blue\">Please click here to return to the comment form.</a></p>";
 							} ?>
 					
 				</div>

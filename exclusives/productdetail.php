@@ -90,7 +90,6 @@
         	</div>
         	
         	<div class="htag">
-        		<!-- Try to make Yours. and Ours. fade in with CSS transition? -->
         	<h2><?php echo $p_name ?></h2>
         	</div>
         	
@@ -99,13 +98,13 @@
           <p><?php echo $p_detail ?></p>
           
           <p>
-          	Want to learn more? <a href="contactus.html">Contact our sales team today.</a>
+          	Want to learn more? <a href="contactus.html" style="color:blue">Contact our sales team today.</a>
           </p>
 
       </div>
    
       	<div class="content">
-                   <em>Price table</em>
+                   <p>Please see the pricing below. Pricing is broadly determined by product groups, our internal categorizations of how valuable our various newletter audiences are. Group A is the least expensive, and Group D is the most expensive.</p>
           <table>
             <tr>
                 <th>Price Group</th>

@@ -33,7 +33,7 @@
 	
 	function name_valid_fun($name) {
 		if(is_string($name)){
-			$pattern = '/[^a-zA-Z]/';
+			$pattern = '/[^a-zA-Z[:space:]]/';
 			$has_weird_char = preg_match($pattern, $name);
 		if($has_weird_char === 1){
 				return FALSE;
@@ -61,7 +61,7 @@
 	$comment_accepted = comment_accepted_fun($email_valid, $name_valid);
 	
 	if($comment_accepted === TRUE){
-			$query = "insert into Comments(comments_name, comments_email, comments_detail)
+		$query = "insert into Comments(comments_name, comments_email, comments_detail)
 					  values ('$name', '$email', '$comment')";
 		$c_insert = $db->query($query); // execute the insert statement and assign the return to $c_insert
 	}
@@ -111,26 +111,14 @@
 
 				<div class="content">
 					
-					<!-- TODO make first block print if comments are validated and successful -->
-					
-					<?php echo "<h2 class=\"htag\">Thanks for your feedback</h2>"; ?>
-					
-					<?php echo "$email"; ?>
-					<?php echo "$name"; ?>
-					<?php echo "$comment"; ?>
-					<?php echo "email valid?"; ?>
-					<?php var_dump($email_valid) ; ?>
-					<?php echo "name valid?" ; ?>
-					<?php var_dump($name_valid); ?>
-					<?php echo "comment accepted?" ; ?>
-					<?php var_dump($comment_accepted); ?>
-					<p>
 							<?php if($comment_accepted === TRUE){
-								echo "THE COMMENT HAS BEEN ACCEPTED THANKS";
+								echo "<div class=\"htag\"><h2>Thanks for your feedback!</h2></div>";
+								echo "<p>Thanks for your comment. Our team will get to your message as soon as possible. Please allow up to 48 hours for a reply.</p>";
+							} else {
+								echo "<div class=\"htag\"><h2>Oops!</h2></div>";
+								echo "<p>Something when wrong with filling out your form. Please <a href=\"contactus.html\">return to the previous page</a> and try again. Be sure to enter a valid name and email address.</p>";
+								echo "<p><a href=\"contactus.html\">Please click here to return to the comment form.</a></p>";
 							} ?>
-					</p>
-
-
 					
 				</div>
 

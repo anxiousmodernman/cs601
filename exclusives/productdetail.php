@@ -57,6 +57,9 @@
 <meta charset="utf-8">
 
 <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+ <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+ <script src="expand.js" type="text/javascript"></script>
 </head>
 <body>
 <!-- start body -->
@@ -105,6 +108,7 @@
    
       	<div class="content">
                    <p>Please see the pricing below. Pricing is broadly determined by product groups, our internal categorizations of how valuable our various newletter audiences are. Group A is the least expensive, and Group D is the most expensive.</p>
+                   <h6 onclick="showHide">Show/Hide</h6>
           <table>
             <tr>
                 <th>Price Group</th>

@@ -18,38 +18,53 @@
 	
 	
 	// email field validation function
-	function email_valid($email) {
+	function email_valid_fun($email) {
 		if(is_string($email)){
-        $has_at = strpos($email, '@');
-        $has_dot = strpos($email, '.');
+        	$has_at = strpos($email, '@');
+        	$has_dot = strpos($email, '.');
 		if($has_at === false || $has_dot === false){
 			return FALSE; // returning FALSE for invalid emails
 		} else {
 			return TRUE; // returning TRUE for valid emails
 		}
-		
+			
+	}
+	} // end of email_valid_fun();
+	
+	function name_valid_fun($name) {
+		if(is_string($name)){
+			$pattern = '/[^a-zA-Z]/';
+			$has_weird_char = preg_match($pattern, $name);
+		if($has_weird_char === 1){
+				return FALSE;
+			} else {
+				return TRUE;
+			}
+		}
 		
 	}
-	}
 	
-	
+	$email_valid = email_valid_fun($email);
+	$name_valid = name_valid_fun($name);
 
 	
-	// activate queries based on booleans? eg "if all 3 are valid then execute query"
-		
-	// if($email_valid === TRUE && $name_valid === TRUE && $comment_valid === TRUE) {
-	if ($email_valid === TRUE){
+	// activate queries based on booleans? eg "if both are valid then execute query"
+	function comment_accepted_fun($email_valid, $name_valid){
+	if ($email_valid === TRUE && $name_valid === TRUE){
 	// TODO get id to auto increment and auto insert
-	$query = "insert into Comments(comments_name, comments_email, comments_detail)
-			  values ($c_name, $c_email, $c_detail)";
-	
-		$comment_accepted = TRUE;
-		
+		return TRUE;
 	} else {
-		$comment_accepted = FALSE;
+		return FALSE;
+	}		
 	}
-	
 
+	$comment_accepted = comment_accepted_fun($email_valid, $name_valid);
+	
+	if($comment_accepted === TRUE){
+			$query = "insert into Comments(comments_name, comments_email, comments_detail)
+					  values ('$name', '$email', '$comment')";
+		$c_insert = $db->query($query); // execute the insert statement and assign the return to $c_insert
+	}
 ?>
 
 
@@ -103,8 +118,18 @@
 					<?php echo "$email"; ?>
 					<?php echo "$name"; ?>
 					<?php echo "$comment"; ?>
-					<?php $tempvar = email_valid($email); ?>
-					<?php var_dump($tempvar) ; ?>
+					<?php echo "email valid?"; ?>
+					<?php var_dump($email_valid) ; ?>
+					<?php echo "name valid?" ; ?>
+					<?php var_dump($name_valid); ?>
+					<?php echo "comment accepted?" ; ?>
+					<?php var_dump($comment_accepted); ?>
+					<p>
+							<?php if($comment_accepted === TRUE){
+								echo "THE COMMENT HAS BEEN ACCEPTED THANKS";
+							} ?>
+					</p>
+
 
 					
 				</div>
